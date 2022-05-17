@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;500&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    --icon: "uxwing-iconsfont";
+    --principal: #0067f4;
+    --medio: #61a3ff;
+    --secundario: #88b9ff;
+    --pCinza: #777;
+    --branco: whitesmoke;
+    --bgCinza: #eee;
+    --borderCinza: #ddd;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+    font-weight: 100;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    cursor: default;
+    background-color: var(--branco);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--principal);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--medio);
+    border-radius: 50px;
+}
+
+/*CORES*/
+.branco {
+    color: whitesmoke;
+}
+
+.preto {
+    color: black;
+}
+
+.bg-black {
+    background-color: #121212;
+}
+
+.bg-vermelho {
+    background-color: #fc3832;
+}
+
+.bg-azul {
+    background-color: var(--principal);
+}
+
+/*FIM CORES*/
+
+
+/*BARRA DO MENU*/
+nav {
+    background-color: var(--principal);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+
+/*FIM BARRA DO MENU*/
+
+
+/*LOGO*/
+.logo {
+    cursor: pointer;
+}
+
+/*FIM LOGO*/
+
+
+/*MENU HAMBURGUER*/
+.hamburguer {
+    display: none;
+}
+
+.hamburguer span {
+    background-color: var(--branco);
+    width: 30px;
+    height: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.hamburguer span::before {
+    content: '';
+    position: relative;
+    background-color: var(--branco);
+    width: 30px;
+    height: 3px;
+    top: -8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.hamburguer span::after {
+    content: '';
+    position: relative;
+    background-color: var(--branco);
+    width: 30px;
+    height: 3px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav.ativo .hamburguer span {
+    background-color: var(--principal);
+}
+
+nav.ativo .hamburguer span::before {
+    transform: rotate(405deg);
+    top: 0;
+}
+
+nav.ativo .hamburguer span::after {
+    transform: rotate(-405deg);
+    top: -3px;
+}
+
+/*FIM MENU HAMBURGUER*/
+
+
+/*OPÇÕES DO MENU*/
+.itens-menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.itens-menu li {
+    text-align: center;
+    padding: 0px 15px;
+    color: rgba(245, 245, 245, 0.6);
+    font-weight: 700;
+    font-family: var(--poppins);
+    border: 3px transparent solid;
+    border-radius: 6%;
+    transition: color 0.3s;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.itens-menu li::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), var(--branco));
+    transition: all 0.3s;
+    transform: translate(0%) scaleX(0);
+}
+
+.itens-menu li:hover::after {
+    transform: translate(0%) scaleX(1);
+}
+
+.itens-menu li:hover {
+    color: rgba(245, 245, 245, 1);
+}
+
+.itens-menu .selecionado {
+    color: rgba(245, 245, 245, 1);
+}
+
+.itens-menu .selecionado::after {
+    transform: translate(0%) scaleX(1);
+}
+
+/*FIM OPÇÕES DO MENU*/
+
+
+/*SERVICOS*/
+#servicos {
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 70px 20px;
+    color: var(--bgCinza);
+}
+
+.cards {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 330px;
+    background-color: var(--branco);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    margin: 25px 5%;
+}
+
+.card-title {
+    position: absolute;
+    width: 90%;
+    height: 40px;
+    background-color: var(--secundario);
+    top: 10px;
+    left: -10px;
+    border-radius: 20px 20px 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--principal);
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 5px;
+    cursor: default;
+}
+
+.card-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -15;
+    top: 40px;
+    background-color: var(--secundario);
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    left: -15;
+    top: 40px;
+    background-color: var(--medio);
+    border-radius: 20px 0 0 20px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content i {
+    display: block;
+    height: 90px;
+    width: 90px;
+    color: var(--principal);
+    background-color: var(--secundario);
+    padding: 15px;
+    font-size: 60px;
+    border-radius: 50px;
+    margin: 30px auto;
+    margin-top: 50px;
+}
+
+.card-content p {
+    color: var(--pCinza);
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.card-content p::before {
+    content: "\e95a";
+    display: block;
+    font-family: var(--icon);
+    color: var(--principal);
+    position: absolute;
+    margin-right: 15px;
+    left: 0;
+    font-size: 20px;
+}
+
+/*FIM SERVICOS*/
+
+
+/*PRECOS*/
+#precos {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 70px 20px 20px 20px;
+}
+
+.plano {
+    width: 330px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    margin: 25px 5%;
+    background: linear-gradient(rgb(43, 219, 220) 0%, var(--principal) 100%);
+    color: whitesmoke;
+    padding: 25px;
+    transition: box-shadow 0.2s ease;
+}
+
+.plano:hover {
+    box-shadow: 0 12px 25px var(--principal);
+}
+
+.plano>p {
+    margin-bottom: 15px;
+    font-family: var(--poppins);
+}
+
+.plano .titulo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.plano .preco {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.plano .preco::after {
+    content: '/mês';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.plano .descricao {
+    margin-bottom: 50px;
+}
+
+.plano .descricao--1::before {
+    content: "\eab9";
+    font-family: var(--icon);
+    margin-right: 8px;
+}
+
+.plano .descricao--2::before {
+    content: "\eabb";
+    font-family: var(--icon);
+    margin-right: 8px;
+}
+
+.plano .descricao--3::before {
+    content: "\eaba";
+    font-family: var(--icon);
+    margin-right: 8px;
+}
+
+.icon-plano {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/*FIM PRECOS*/
+
+
+/*DUVIDAS*/
+#duvidas {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 70px 20px;
+    background-color: var(--bgCinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion {
+    width: 80%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+.accordion__item input {
+    display: none;
+}
+
+.accordion__title {
+    background-color: var(--branco);
+    text-align: left;
+    font-family: var(--poppins);
+    font-weight: 600;
+    position: relative;
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--borderCinza);
+    color: black;
+}
+
+.accordion .accordion__item:last-child .accordion__title {
+    border: none;
+}
+
+.accordion__title::after {
+    content: "\ea10";
+    font-family: var(--icon);
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 8px);
+    transition: transform 0.2s ease;
+}
+
+.accordion__content {
+    background-color: var(--borderCinza);
+    text-align: justify;
+    padding: 20px 60px;
+    height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+input:checked~.accordion__content {
+    height: auto;
+    visibility: visible;
+    display: block;
+}
+
+input:checked~.accordion__title {
+    background-color: var(--secundario);
+}
+
+input:checked~.accordion__title::after {
+    transform: rotate(180deg);
+}
+
+.accordion__content p {
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+
+.accordion__content p a {
+    font-family: var(--poppins);
+    font-weight: 400;
+    color: var(--principal);
+}
+
+/*FIM DUVIDAS*/
+
+
+/*CONTATO*/
+#contato {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    margin: 50px 0 30px 0;
+    width: 70%;
+    height: 500px;
+}
+
+.contatos-infos {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.contatos-infos__item {
+    display: flex;
+    align-items: center;
+}
+
+.contatos-infos__item>i {
+    color: var(--branco);
+    font-size: 24px;
+    border-radius: 100%;
+    padding: 12px;
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+.contatos-infos__content, .contatos-infos__content a{
+    text-align: left;
+    font-weight: 300;
+}
+
+.form {
+    width: 70%;
+    text-align: left;
+    margin-top: 120px;
+    font-family: var(--poppins);
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #666;
+}
+
+.form__title>span {
+    font-family: var(--poppins);
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.form__title::before {
+    content: "\e9a7";
+    font-family: var(--icon);
+    margin-right: 8px;
+    font-weight: 100;
+    position: relative;
+    top: 3px;
+}
+
+.form__inputs {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__group {
+    font-family: var(--poppins);
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+}
+
+.form__group.nome::before {
+    content: "\ea23";
+    font-family: var(--icon);
+    position: absolute;
+    font-size: 20px;
+    color: #666;
+    right: 15px;
+    top: 40px;
+}
+
+.form__group.email::before {
+    content: "\e91c";
+    font-family: var(--icon);
+    position: absolute;
+    font-size: 20px;
+    color: #666;
+    right: 15px;
+    top: 40px;
+}
+
+.form__group.mensagem::before {
+    content: "\ea53";
+    font-family: var(--icon);
+    position: absolute;
+    font-size: 20px;
+    color: #666;
+    right: 15px;
+    top: 40px;
+}
+
+.alert {
+    display: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.erro {
+    display: initial;
+    background-color: lightcoral;
+    color: darkred;
+}
+
+.sucesso {
+    background-color: lightgreen;
+    color: darkgreen;
+    display: initial;
+}
+
+.form__group.col-6 {
+    width: 48%;
+}
+
+.form__group.col-12 {
+    width: 100%;
+}
+
+input.form__control {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: var(--poppins);
+    padding: 10px 45px 10px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(164, 164, 164);
+    outline: none;
+    transition: border-color 0.1s ease;
+}
+
+input.form__control:focus {
+    border-color: var(--principal);
+}
+
+input.form__control:not(:placeholder-shown) {
+    border-color: var(--principal);
+}
+
+textarea.form__control {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: var(--poppins);
+    padding: 10px 45px 10px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(164, 164, 164);
+    outline: none;
+    transition: border-color 0.1s ease;
+    resize: none;
+    width: 100%;
+    height: 130px;
+}
+
+textarea.form__control:focus {
+    border-color: var(--principal);
+}
+
+textarea.form__control:not(:placeholder-shown) {
+    border-color: var(--principal);
+}
+
+button.form__control {
+    margin-top: 40px;
+    background-color: var(--branco);
+    border: none;
+    color: var(--principal);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    padding: 13px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid var(--principal);
+    transition: all 0.3s ease-out;
+}
+
+button.form__control:hover {
+    color: var(--branco);
+    background-color: var(--principal);
+}
+
+.form__group>span {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--poppins);
+    color: #666;
+}
+
+/*FIM CONTATO*/
+
+/*RODAPE*/
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+}
+
+footer>.social {
+    margin: 50px 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer>.social>a>i {
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+
+footer>.social>a>i:hover {
+    color: var(--principal);
+}
+
+footer>p {
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+/*FIM RODAPE*/
+
+/*BOTÕES*/
+.btn-quadrado {
+    background-color: var(--branco);
+    border: none;
+    color: var(--principal);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    padding: 13px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-quadrado:hover {
+    color: var(--principal);
+}
+
+.btn-redondo {
+    background-color: var(--branco);
+    border: none;
+    color: var(--principal);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    padding: 13px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*FIM BOTÕES*/
+
+
+/*TEXTOS GLOBAIS*/
+main h1 {
+    color: #666;
+    font-family: var(--roboto);
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+main h3 {
+    color: #999;
+    font-family: var(--roboto);
+    font-weight: 100;
+    font-size: 25px;
+    padding: 0 10vw;
+}
+
+/*FIM TEXTOS GLOBAIS*/
