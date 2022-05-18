@@ -2,12 +2,6 @@ const menu = document.querySelector('.hamburguer');
 const nav = document.querySelector('nav')
 const itensMenu = document.querySelectorAll('.itens-menu li');
 
-const home = 0;
-const servicos = document.getElementById('servicos').offsetTop- 50;
-const precos = document.getElementById('precos').offsetTop- 50;
-const duvidas = document.getElementById('duvidas').offsetTop- 50;
-const contato = document.getElementById('contato').offsetTop- 50;
-
 menu.addEventListener('click', () => {
     if (nav.classList.contains('ativo')) {
         nav.classList.remove('ativo')
@@ -26,6 +20,11 @@ itensMenu.forEach((element) => {
 
 document.addEventListener('scroll', () => {
     const scroll = document.scrollingElement.scrollTop;
+    const home = 0;
+    const servicos = document.getElementById('servicos').offsetTop- 50;
+    const precos = document.getElementById('precos').offsetTop- 50;
+    const duvidas = document.getElementById('duvidas').offsetTop- 50;
+    const contato = document.getElementById('contato').offsetTop- 50;
 
     if (scroll > contato) selecionaItem("contato")
     else if (scroll > duvidas) selecionaItem("duvidas")
@@ -46,6 +45,12 @@ function selecionaItem(item) {
 }
 
 function rolarPara(item) {
+    const home = 0;
+    const servicos = document.getElementById('servicos').offsetTop- 50;
+    const precos = document.getElementById('precos').offsetTop- 50;
+    const duvidas = document.getElementById('duvidas').offsetTop- 50;
+    const contato = document.getElementById('contato').offsetTop- 50;
+
     if (item === "home") window.scrollTo(0, home)
     if (item === "servicos") window.scrollTo(0, servicos+1)
     if (item === "precos") window.scrollTo(0, precos+1)

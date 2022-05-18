@@ -4,7 +4,7 @@
     nav{
         flex-direction: column;
         position: fixed;
-        height: 65px;
+        height: 55px;
     }
     
     nav.ativo{
@@ -33,9 +33,11 @@
 
     /*MENU HAMBURGUER*/
     .hamburguer{
-        display: block;
+        height: 25px;
+        display: flex;
+        align-items: center;
     }
-
+    
     .hamburguer span{
         display: block;
     }
