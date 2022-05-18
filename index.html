@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>uNext | Home</title>
+    <link rel="icon" type="imagem/png" href="./content/images/icon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0067f4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0067f4">
+    <meta name="msapplication-navbutton-color" content="#0067f4">
+
+    <link rel="stylesheet" href="./content/icons/css/uxwing-iconsfont.min.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+
+    <script src="./js/efeitos.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="home">
+        <!--MENU-->
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="./content/images/logo2.png" height="40" alt="logo">
+                </a>
+
+                <div class="hamburguer">
+                    <span></span>
+                </div>
+            </div>
+
+            <ul class="itens-menu">
+
+                <li class="js-item-nav selecionado" data-section="home">HOME</li>
+                <li class="js-item-nav" data-section="servicos">SERVIÇOS</li>
+                <li class="js-item-nav" data-section="precos">PREÇOS</li>
+                <li class="js-item-nav" data-section="duvidas">DÚVIDAS</li>
+                <li class="js-item-nav" data-section="contato">CONTATO</li>
+
+            </ul>
+
+            <a href="/login" class="btn-quadrado">ENTRAR</a>
+        </nav>
+        <!--FIM MENU-->
+    </header>
+    <!--FIM HEADER-->
+    <!--MAIN-->
+    <main>
+
+
+        <!-- SLIDER -->
+        <div class="slider">
+
+            <div class="icon esquerda">
+                <i class="fi fi-line-angle-left"></i>
+            </div>
+            <div class="icon direita">
+                <i class="fi fi-line-angle-right"></i>
+            </div>
+
+            <div class="slide">
+                <span>
+                    <h1>Agenda Digital</h1>
+                    <p>
+                        Uma das nossas grandes vantagens é a agenda digital
+                        incluída junto dos nossos serviços de gerenciamento
+                        de consultórios. Fácil, simples e prática.
+
+                    </p>
+                </span>
+                <img src="~/Content/Home/images/slide-3.png" alt="" />
+            </div>
+
+            <div class="slide">
+                <span>
+                    <h1>Controle Financeiro</h1>
+                    <p>
+                        Não quebre a cabeça tendo que calcular as porcentagens a
+                        serem pagas para seus dentistas, fazemos todo o seu controle
+                        financeiro.
+
+                    </p>
+                </span>
+                <img src="~/Content/Home/images/slide-1.png" alt="" />
+            </div>
+
+            <div class="slide">
+                <span>
+                    <h1>Facilitando sua Vida</h1>
+                    <p>
+                        Facilitar o gerenciamento do seu consultório é facilitar a
+                        sua vida. Tenha total controle do seu espaço aqui.
+
+                    </p>
+                </span>
+                <img src="~/Content/Home/images/slide-2.png" alt="" />
+            </div>
+
+            <div class="index-slider">
+                <i class="fi fi-circle" data-index="0"></i>
+                <i class="fi fi-circle-line" data-index="1"></i>
+                <i class="fi fi-circle-line" data-index="2"></i>
+            </div>
+
+        </div>
+        <!-- FIM SLIDER -->
+        <!-- SERVIÇOS -->
+        <div id="servicos">
+            <h1>SERVIÇOS</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-title">
+                        CANDIDATO
+                    </div>
+                    <div class="card-content">
+                        <i class="fi fi-male"></i>
+                        <p>
+                            Cadastro de perfil completo
+                        </p>
+                        <p>
+                            Busca por vagas de forma simples
+                        </p>
+                        <p>
+                            Status e feedback das candidaturas
+                        </p>
+                        <p>
+                            Estatísticas gerais
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        RECRUTADOR
+                    </div>
+                    <div class="card-content">
+                        <i class="fi fi-briefcase"></i>
+                        <p>
+                            Criar vagas
+                        </p>
+                        <p>
+                            Filtragem de candidaturas
+                        </p>
+                        <p>
+                            Vizualização de candidatos
+                        </p>
+                        <p>
+                            Gerenciamento de espaço
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        EMPRESA
+                    </div>
+                    <div class="card-content">
+                        <i class="fi fi-building"></i>
+                        <p>
+                            Criação de perfil
+                        </p>
+                        <p>
+                            Gestão de recrutadores
+                        </p>
+                        <p>
+                            Gastos e despesas
+                        </p>
+                        <p>
+                            Calculos totalmente automatizados
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>
+                Dentre as diversas funcionalidades da nossa plataforma, essas são
+                somente as principais, o que está esperando para se juntar a nós?
+            </h3>
+
+        </div>
+        <!-- FIM SERVIÇOS -->
+        <!-- PREÇOS -->
+        <div id="precos">
+            <h1>PREÇOS</h1>
+
+            <h3>
+                Nossos planos não possuem limitações de funcionalidades,
+                tenha um sistema de qualidade independente do tamanho da sua clínica.
+            </h3>
+
+            <div class="cards">
+
+                <div class="plano">
+                    <img class="icon-plano" src="~/Content/Home/images/plano-1.png" alt="" />
+
+                    <p class="titulo">Básico</p>
+
+                    <p class="preco">R$ 60</p>
+
+                    <p class="descricao descricao--1">Acesso para até 5 pessoas</p>
+
+                    <button class="btn-redondo">Contratar</button>
+                </div>
+
+                <div class="plano">
+                    <img class="icon-plano" src="~/Content/Home/images/plano-2.png" alt="" />
+
+                    <p class="titulo">Profissional</p>
+
+                    <p class="preco">R$ 90</p>
+
+                    <p class="descricao descricao--2">Acesso para até 10 pessoas</p>
+
+                    <button class="btn-redondo">Contratar</button>
+                </div>
+
+                <div class="plano">
+                    <img class="icon-plano" src="~/Content/Home/images/plano-3.png" alt="" />
+
+                    <p class="titulo">Empresa</p>
+
+                    <p class="preco">R$ 120</p>
+
+                    <p class="descricao descricao--3">Acesso para até 15 pessoas</p>
+
+                    <button class="btn-redondo">Contratar</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIM PREÇOS -->
+        <!-- DUVIDAS -->
+        <div id="duvidas">
+            <h1>DÚVIDAS</h1>
+
+            <h3>Perguntas frequentes sobre nossos serviços.</h3>
+
+            <div class="accordion">
+                <label class="accordion__item">
+                    <input type="radio" name="radio-accordion">
+                    <div class="accordion__title">
+                        Como funciona a contratação dos serviços?
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                            Primeiro é necessário se cadastrar em nosso site, após isso, na área do cliente é só
+                            escolher
+                            o plano que desejar e gerar seu boleto, assim que o pagamento for efetuado os nossos
+                            serviços já estarão disponíveis.
+                        </p>
+                    </div>
+                </label>
+
+                <label class="accordion__item">
+                    <input type="radio" name="radio-accordion">
+                    <div class="accordion__title">
+                        Só é possível contratar os planos por mês?
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                            No momento de escolher seu plano, disponibilizamos as seguintes
+                            opções:
+                        </p>
+                        <p>&nbsp;</p>
+                        <p style="text-align: left;">
+                            Mês: Serviços disponíveis durante 30 dias.
+                        </p>
+                        <p style="text-align: left;">
+                            Semestre: Serviços disponíveis durante 180 dias.
+                        </p>
+                        <p style="text-align: left;">
+                            Ano: Serviços disponíveis durante 360 dias.
+                        </p>
+                    </div>
+                </label>
+
+                <label class="accordion__item">
+                    <input type="radio" name="radio-accordion">
+                    <div class="accordion__title">
+                        Quais as formas de pagamento?
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                            A única forma de contratar nossos serviços é através do boleto.
+                        </p>
+                    </div>
+                </label>
+
+                <label class="accordion__item">
+                    <input type="radio" name="radio-accordion">
+                    <div class="accordion__title">
+                        Como posso ver todas as funcionalidades do sistema?
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                            Disponibilizamos um guia completo de tutorias e demonstrações
+                            sobre as funcionalidades do sistema. Para conferir <a href="https://www.youtube.com/"
+                                target="_blank">clique aqui.</a>
+                        </p>
+                    </div>
+                </label>
+
+                <label class="accordion__item">
+                    <input type="radio" name="radio-accordion">
+                    <div class="accordion__title">
+                        Posso acessar o sistema do meu celular?
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                            Nossos sistemas são 100% online podendo ser acessados tanto pelo computador quanto pelo
+                            celular, basta utilizar o navegador de sua preferência.
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <!-- FIM DUVIDAS -->
+        <!-- CONTATO -->
+        <div id="contato">
+            <h1>CONTATO</h1>
+
+            <h3>Ainda está com alguma dúvida? Entre em contato conosco!</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.421177476758!2d-46.62432174127808!3d-23.574104700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597abf1a28ff%3A0x1b02a58f85e6395e!2sFIAP!5e0!3m2!1spt-BR!2sbr!4v1652773186247!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Mapa"></iframe>
+
+            <div class="contatos-infos">
+                <div class="contatos-infos__item">
+                    <i class="fi fi-maps-line bg-black"></i>
+                    <div class="contatos-infos__content">
+                        Aclimação
+                        <br />
+                        São Paulo - SP
+                    </div>
+                </div>
+
+                <div class="contatos-infos__item">
+                    <i class="fi fi-envelope bg-vermelho"></i>
+                    <div class="contatos-infos__content">
+                        <a href="mailto:contato@unext.com">contato@unext.com</a>
+                    </div>
+                </div>
+
+                <div class="contatos-infos__item">
+                    <i class="fi fi-phone bg-azul"></i>
+                    <div class="contatos-infos__content">
+                        <a href="tel:+5511995450088">(11) 99545-0088</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form">
+                <h2 class="form__title">Envie <span>uma mensagem</span></h2>
+
+                <div class="form__inputs">
+                    <div class="form__group col-6 nome">
+                        <span>Nome</span>
+                        <input type="text" name="nome" required class="form__control nome" placeholder="Nome"
+                            autocomplete="off" />
+                    </div>
+
+                    <div class="form__group col-6 email">
+                        <span>Email</span>
+                        <input type="email" name="email" required class="form__control" placeholder="Email"
+                            autocomplete="off" />
+                    </div>
+
+                    <div class="form__group col-12 mensagem">
+                        <span>Mensagem</span>
+                        <textarea type="area" name="mensagem" required class="form__control" placeholder="Mensagem"
+                            autocomplete="off"></textarea>
+                    </div>
+
+                    <div class="form__group col-12 alert sucesso">Mensagem enviada com sucesso. Aguarde sua resposta em
+                        seu email.</div>
+
+                    <div class="form__group col-12 alert erro">Ocorreu um erro ao enviar a mensagem. Tente novamente.
+                    </div>
+
+                    <button type="submit" class="form__control js-enviar">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- FIM CONTATO -->
+
+    </main>
+    <!--FIM MAIN-->
+    <!--FOOTER-->
+    <footer>
+        <img src="./content/images/logo1.png" height="45" alt="logo">
+
+        <div class="social">
+            <a target="_blank" href="#"><i class="fi fi-facebook"></i></a>
+            <a target="_blank" href="#"><i class="fi fi-instagram"></i></a>
+            <a target="_blank" href="#"><i class="fi fi-twitter"></i></a>
+            <a target="_blank" href="#"><i class="fi fi-linkedin"></i></a>
+        </div>
+
+        <p>Desenvolvido por uNext</p>
+        <p>© Todos os direitos reservados</p>
+    </footer>
+    <!--FIM FOOTER-->
+</body>
+
+</html>
