@@ -18,10 +18,47 @@
     --cinza2: #ddd;
     --cinza3: #ccc;
     --cinza4: #999;
+    --cinza5: #666;
 
     /*Rolagem suave*/
     scroll-behavior: smooth;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+    cursor: default;
+    background-color: var(--cor5);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--cor1);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);
+    border-radius: 50px;
+}
+
 
 .sitemap{
     position: fixed;
@@ -69,3 +106,4 @@
         background-color: #F2E41B;
     }
 }
+

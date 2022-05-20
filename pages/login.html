@@ -10,9 +10,46 @@
     <meta name="msapplication-navbutton-color" content="#0067f4">
     
     <title>uNext | Login</title>
-    <link rel="icon" type="imagem/png" href="./content/icons/icon.ico" />
+    <link rel="icon" type="imagem/png" href="../content/icons/icon.ico" />
+    <link rel="stylesheet" href="../content/icons/css/uxwing-iconsfont.min.css">
+    <link rel="stylesheet" href="../styles/generic/generic.css">
+    <link rel="stylesheet" href="../styles/login/login.css">
 </head>
 <body>
-    
+    <!-- BOTÃO SITEMAP -->
+    <a href="../SiteMap/index.html" class="sitemap">Site map</a>
+    <!-- FIM BOTÃO SITEMAP -->
+
+    <main>
+        <form action="#" class="form">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../content/images/logo3.png" alt="">
+                </a>
+            </div>
+
+            <div class="form__group col-12 email">
+                <span>Email</span>
+                <input type="email" class="form__control" placeholder="Email" required name="email">
+            </div>
+            <div class="form__group col-12 senha">
+                <span>Senha</span>
+                <input type="password" class="form__control" placeholder="Senha" required name="senha">
+            </div>
+
+            <div class="form__group col-12 alert erro">Email ou Senha incorreta. Tente novamente.
+            </div>
+
+            <div class="center">
+                <button type="submit" class="form__control">Entrar</button>
+            </div>
+
+            <div class="center botoes">
+                <a href="">Quero me cadastrar</a>
+                <a href="">Esqueci minha senha</a>
+            </div>
+            
+        </form>
+    </main>
 </body>
 </html>
