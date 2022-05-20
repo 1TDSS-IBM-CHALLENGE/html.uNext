@@ -128,7 +128,7 @@ function alteraSlide(){
 function trocaAutomatico(){
     setInterval(() => {
         toDireita()
-    }, 8000)
+    }, 10000)
 }
 
 initSlider()

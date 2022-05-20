@@ -1,6 +1,6 @@
 /*CONTAINER DO SLIDER*/
 .slider{
-    background-color: var(--principal);
+    background-color: var(--cor1);
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     font-family: var(--poppins);
-    color: var(--branco);
+    color: var(--cor5);
     font-weight: 700;
     opacity: 0;
     transition: opacity ease 1s;
@@ -132,7 +132,7 @@
 }
 
 .index-slider .fi{
-    color: #ccc;
+    color: var(--cinza3);
     opacity: .5;
     cursor: pointer;
     transition: all ease .5s;
