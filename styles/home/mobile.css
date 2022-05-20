@@ -122,7 +122,7 @@
 
     /*TEXTOS GLOBAIS*/
     main  h3{
-        color: #999;
+        color: var(--cinza4);
         font-family: var(--roboto);
         font-weight: 100;
         font-size: 22px;

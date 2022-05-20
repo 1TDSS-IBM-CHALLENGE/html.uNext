@@ -1,55 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;500&display=swap');
-
-:root {
-    --poppins: 'Poppins', sans-serif;
-    --roboto: 'Roboto', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    --icon: "uxwing-iconsfont";
-    --principal: #0067f4;
-    --medio: #61a3ff;
-    --secundario: #88b9ff;
-    --pCinza: #777;
-    --branco: whitesmoke;
-    --bgCinza: #eee;
-    --borderCinza: #ddd;
-    scroll-behavior: smooth;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--roboto);
-    font-weight: 100;
-    -webkit-tap-highlight-color: transparent;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    overflow-x: hidden;
-    cursor: default;
-    background-color: var(--branco);
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: var(--principal);
-}
-
-body::-webkit-scrollbar {
-    width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--medio);
-    border-radius: 50px;
-}
 
 /*CORES*/
-.branco {
+.cor5 {
     color: whitesmoke;
 }
 
@@ -66,7 +17,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-azul {
-    background-color: var(--principal);
+    background-color: var(--cor1);
 }
 
 /*FIM CORES*/
@@ -74,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 
 /*BARRA DO MENU*/
 nav {
-    background-color: var(--principal);
+    background-color: var(--cor1);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -104,7 +55,7 @@ nav {
 }
 
 .hamburguer span {
-    background-color: var(--branco);
+    background-color: var(--cor5);
     width: 30px;
     height: 3px;
     cursor: pointer;
@@ -114,7 +65,7 @@ nav {
 .hamburguer span::before {
     content: '';
     position: relative;
-    background-color: var(--branco);
+    background-color: var(--cor5);
     width: 30px;
     height: 3px;
     top: -8px;
@@ -125,7 +76,7 @@ nav {
 .hamburguer span::after {
     content: '';
     position: relative;
-    background-color: var(--branco);
+    background-color: var(--cor5);
     width: 30px;
     height: 3px;
     top: 5px;
@@ -134,7 +85,7 @@ nav {
 }
 
 nav.ativo .hamburguer span {
-    background-color: var(--principal);
+    background-color: var(--cor1);
 }
 
 nav.ativo .hamburguer span::before {
@@ -181,7 +132,7 @@ nav.ativo .hamburguer span::after {
     width: 32px;
     height: 4px;
     margin: 5px auto;
-    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), var(--branco));
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), var(--cor5));
     transition: all 0.3s;
     transform: translate(0%) scaleX(0);
 }
@@ -207,12 +158,10 @@ nav.ativo .hamburguer span::after {
 
 /*SERVICOS*/
 #servicos {
-    background-color: #eee;
     width: 100%;
     height: auto;
     text-align: center;
     padding: 70px 20px;
-    color: var(--bgCinza);
 }
 
 .cards {
@@ -226,24 +175,29 @@ nav.ativo .hamburguer span::after {
 
 .card {
     width: 330px;
-    background-color: var(--branco);
+    background-color: var(--cor5);
     border-radius: 5px;
     position: relative;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
     margin: 25px 5%;
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-15px);
 }
 
 .card-title {
     position: absolute;
     width: 90%;
     height: 40px;
-    background-color: var(--secundario);
+    background-color: var(--cor3);
     top: 10px;
     left: -10px;
     border-radius: 20px 20px 20px 0;
     text-transform: uppercase;
     text-align: center;
-    color: var(--principal);
+    color: var(--cor1);
     font-family: var(--poppins);
     font-weight: 700;
     font-size: 20px;
@@ -259,7 +213,7 @@ nav.ativo .hamburguer span::after {
     height: 10px;
     left: -15;
     top: 40px;
-    background-color: var(--secundario);
+    background-color: var(--cor3);
 }
 
 .card-title::after {
@@ -270,7 +224,7 @@ nav.ativo .hamburguer span::after {
     height: 20px;
     left: -15;
     top: 40px;
-    background-color: var(--medio);
+    background-color: var(--cor2);
     border-radius: 20px 0 0 20px;
 }
 
@@ -282,8 +236,8 @@ nav.ativo .hamburguer span::after {
     display: block;
     height: 90px;
     width: 90px;
-    color: var(--principal);
-    background-color: var(--secundario);
+    color: var(--cor1);
+    background-color: var(--cor3);
     padding: 15px;
     font-size: 60px;
     border-radius: 50px;
@@ -292,7 +246,7 @@ nav.ativo .hamburguer span::after {
 }
 
 .card-content p {
-    color: var(--pCinza);
+    color: var(--cor4);
     text-align: left;
     position: relative;
     margin-bottom: 15px;
@@ -304,92 +258,13 @@ nav.ativo .hamburguer span::after {
     content: "\e95a";
     display: block;
     font-family: var(--icon);
-    color: var(--principal);
+    color: var(--cor1);
     position: absolute;
     margin-right: 15px;
     left: 0;
     font-size: 20px;
 }
-
 /*FIM SERVICOS*/
-
-
-/*PRECOS*/
-#precos {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 70px 20px 20px 20px;
-}
-
-.plano {
-    width: 330px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-    margin: 25px 5%;
-    background: linear-gradient(rgb(43, 219, 220) 0%, var(--principal) 100%);
-    color: whitesmoke;
-    padding: 25px;
-    transition: box-shadow 0.2s ease;
-}
-
-.plano:hover {
-    box-shadow: 0 12px 25px var(--principal);
-}
-
-.plano>p {
-    margin-bottom: 15px;
-    font-family: var(--poppins);
-}
-
-.plano .titulo {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.plano .preco {
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.plano .preco::after {
-    content: '/mês';
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.plano .descricao {
-    margin-bottom: 50px;
-}
-
-.plano .descricao--1::before {
-    content: "\eab9";
-    font-family: var(--icon);
-    margin-right: 8px;
-}
-
-.plano .descricao--2::before {
-    content: "\eabb";
-    font-family: var(--icon);
-    margin-right: 8px;
-}
-
-.plano .descricao--3::before {
-    content: "\eaba";
-    font-family: var(--icon);
-    margin-right: 8px;
-}
-
-.icon-plano {
-    max-width: 60%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-/*FIM PRECOS*/
-
 
 /*DUVIDAS*/
 #duvidas {
@@ -398,7 +273,7 @@ nav.ativo .hamburguer span::after {
     height: auto;
     text-align: center;
     padding: 70px 20px;
-    background-color: var(--bgCinza);
+    background-color: var(--cinza1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,7 +291,8 @@ nav.ativo .hamburguer span::after {
 }
 
 .accordion__title {
-    background-color: var(--branco);
+    display: block;
+    background-color: var(--cor5);
     text-align: left;
     font-family: var(--poppins);
     font-weight: 600;
@@ -425,7 +301,7 @@ nav.ativo .hamburguer span::after {
     padding-right: 50px;
     font-size: 16px;
     cursor: pointer;
-    border-bottom: 1px solid var(--borderCinza);
+    border-bottom: 1px solid var(--cinza2);
     color: black;
 }
 
@@ -443,7 +319,7 @@ nav.ativo .hamburguer span::after {
 }
 
 .accordion__content {
-    background-color: var(--borderCinza);
+    background-color: var(--cinza2);
     text-align: justify;
     padding: 20px 60px;
     height: 0;
@@ -458,7 +334,7 @@ input:checked~.accordion__content {
 }
 
 input:checked~.accordion__title {
-    background-color: var(--secundario);
+    background-color: var(--cor3);
 }
 
 input:checked~.accordion__title::after {
@@ -473,7 +349,7 @@ input:checked~.accordion__title::after {
 .accordion__content p a {
     font-family: var(--poppins);
     font-weight: 400;
-    color: var(--principal);
+    color: var(--cor1);
 }
 
 /*FIM DUVIDAS*/
@@ -510,7 +386,7 @@ iframe {
 }
 
 .contatos-infos__item>i {
-    color: var(--branco);
+    color: var(--cor5);
     font-size: 24px;
     border-radius: 100%;
     padding: 12px;
@@ -533,7 +409,7 @@ iframe {
 .form__title {
     font-weight: 700;
     font-size: 30px;
-    color: #666;
+    color: var(--cinza5);
 }
 
 .form__title>span {
@@ -572,7 +448,7 @@ iframe {
     font-family: var(--icon);
     position: absolute;
     font-size: 20px;
-    color: #666;
+    color: var(--cinza5);
     right: 15px;
     top: 40px;
 }
@@ -582,7 +458,7 @@ iframe {
     font-family: var(--icon);
     position: absolute;
     font-size: 20px;
-    color: #666;
+    color: var(--cinza5);
     right: 15px;
     top: 40px;
 }
@@ -592,7 +468,7 @@ iframe {
     font-family: var(--icon);
     position: absolute;
     font-size: 20px;
-    color: #666;
+    color: var(--cinza5);
     right: 15px;
     top: 40px;
 }
@@ -605,7 +481,7 @@ iframe {
 }
 
 .erro {
-    display: initial;
+    display: block;
     background-color: lightcoral;
     color: darkred;
 }
@@ -613,7 +489,7 @@ iframe {
 .sucesso {
     background-color: lightgreen;
     color: darkgreen;
-    display: initial;
+    display: block;
 }
 
 .form__group.col-6 {
@@ -630,17 +506,17 @@ input.form__control {
     font-family: var(--poppins);
     padding: 10px 45px 10px 10px;
     border-radius: 5px;
-    border: 2px solid rgb(164, 164, 164);
+    border: 2px solid var(--cinza4);
     outline: none;
     transition: border-color 0.1s ease;
 }
 
 input.form__control:focus {
-    border-color: var(--principal);
+    border-color: var(--cor1);
 }
 
 input.form__control:not(:placeholder-shown) {
-    border-color: var(--principal);
+    border-color: var(--cor1);
 }
 
 textarea.form__control {
@@ -649,7 +525,7 @@ textarea.form__control {
     font-family: var(--poppins);
     padding: 10px 45px 10px 10px;
     border-radius: 5px;
-    border: 2px solid rgb(164, 164, 164);
+    border: 2px solid var(--cinza4);
     outline: none;
     transition: border-color 0.1s ease;
     resize: none;
@@ -658,18 +534,18 @@ textarea.form__control {
 }
 
 textarea.form__control:focus {
-    border-color: var(--principal);
+    border-color: var(--cor1);
 }
 
 textarea.form__control:not(:placeholder-shown) {
-    border-color: var(--principal);
+    border-color: var(--cor1);
 }
 
 button.form__control {
     margin-top: 40px;
-    background-color: var(--branco);
+    background-color: var(--cor5);
     border: none;
-    color: var(--principal);
+    color: var(--cor1);
     font-size: 16px;
     font-weight: 700;
     font-family: var(--poppins);
@@ -677,20 +553,20 @@ button.form__control {
     border-radius: 4px;
     cursor: pointer;
     text-transform: uppercase;
-    border: 2px solid var(--principal);
+    border: 2px solid var(--cor1);
     transition: all 0.3s ease-out;
 }
 
 button.form__control:hover {
-    color: var(--branco);
-    background-color: var(--principal);
+    color: var(--cor5);
+    background-color: var(--cor1);
 }
 
 .form__group>span {
     font-weight: 400;
     font-size: 14px;
     font-family: var(--poppins);
-    color: #666;
+    color: var(--cinza5);
 }
 
 /*FIM CONTATO*/
@@ -704,7 +580,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--branco);
+    color: var(--cor5);
 }
 
 footer>.social {
@@ -728,7 +604,7 @@ footer>.social>a>i {
 }
 
 footer>.social>a>i:hover {
-    color: var(--principal);
+    color: var(--cor1);
 }
 
 footer>p {
@@ -740,9 +616,9 @@ footer>p {
 
 /*BOTÕES*/
 .btn-quadrado {
-    background-color: var(--branco);
+    background-color: var(--cor5);
     border: none;
-    color: var(--principal);
+    color: var(--cor1);
     font-size: 16px;
     font-weight: 700;
     font-family: var(--poppins);
@@ -753,13 +629,13 @@ footer>p {
 }
 
 .btn-quadrado:hover {
-    color: var(--principal);
+    color: var(--cor1);
 }
 
 .btn-redondo {
-    background-color: var(--branco);
+    background-color: var(--cor5);
     border: none;
-    color: var(--principal);
+    color: var(--cor1);
     font-size: 16px;
     font-weight: 700;
     font-family: var(--poppins);
@@ -774,7 +650,7 @@ footer>p {
 
 /*TEXTOS GLOBAIS*/
 main h1 {
-    color: #666;
+    color: var(--cinza5);
     font-family: var(--roboto);
     font-weight: 100;
     font-size: 40px;
