@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Site Map</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>uNext</h1>
+        </nav>
+    </header>
+
+    <main id="view-candidato">
+        <h1>CANDIDATO</h1>
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>1° Nível de Acesso</h1>
+                <h3>Primeiras telas que o usúario vai ter acesso ao entrar na plataforma.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/candidato/login.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Login</h1>
+                        <span>Rota: </span><span class="link">/login</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/cadastro.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Cadastro</h1>
+                        <span>Rota: </span><span class="link">/cadastro</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/home.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Home</h1>
+                        <span>Rota: </span><span class="link">/home</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>2° Nível de Acesso</h1>
+                <h3>Todas as telas possíveis de serem acessadas pelo menu depois do candidato já estar logado.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/candidato/perfil.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Perfil</h1>
+                        <span>Rota: </span><span class="link">/perfil/{user}</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/vagas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Vagas</h1>
+                        <span>Rota: </span><span class="link">/vagas</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/notifacoes.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Notificações</h1>
+                        <span>Rota: </span><span class="link">/notificacoes</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/candidaturas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Candidaturas</h1>
+                        <span>Rota: </span><span class="link">/candidaturas</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/estatisticas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Estatísticas</h1>
+                        <span>Rota: </span><span class="link">/estatisticas</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>3° Nível de Acesso</h1>
+                <h3>Telas que só podem ser acessadas a partir de outras do 2° nível de acesso.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/candidato/candidatura.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Candidatura</h1>
+                        <span>Rota: </span><span class="link">/candidaturas/{id_candidatura}</span>
+                    </div>
+                </a>
+                <a href="./pages/candidato/vaga.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Vaga</h1>
+                        <span>Rota: </span><span class="link">/vagas/{id_vaga}</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>4° Nível de Acesso</h1>
+                <h3>Nível de acesso mais alto, essas telas só podem ser acessadas dependendo de certas regras de negócio.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/candidato/prova.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Prova</h1>
+                        <span>Rota: </span><span class="link">/vagas/{id_vaga}/prova</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <main id="view-candidato">
+        <h1>EMPRESA</h1>
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>1° Nível de Acesso</h1>
+                <h3>Primeiras telas que o usúario vai ter acesso ao entrar na plataforma.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/empresa/login.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Login</h1>
+                        <span>Rota: </span><span class="link">/login</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/cadastro.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Cadastro</h1>
+                        <span>Rota: </span><span class="link">/cadastro</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/home.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Home</h1>
+                        <span>Rota: </span><span class="link">/home</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>2° Nível de Acesso</h1>
+                <h3>Todas as telas possíveis de serem acessadas pelo menu depois do candidato já estar logado.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/empresa/perfil.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Perfil</h1>
+                        <span>Rota: </span><span class="link">/perfil/{user}</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/vagas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Vagas</h1>
+                        <span>Rota: </span><span class="link">/vagas</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/notifacoes.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Notificações</h1>
+                        <span>Rota: </span><span class="link">/notificacoes</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/provas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Provas</h1>
+                        <span>Rota: </span><span class="link">/provas</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/candidaturas.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Candidaturas</h1>
+                        <span>Rota: </span><span class="link">/candidaturas</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>3° Nível de Acesso</h1>
+                <h3>Telas que só podem ser acessadas a partir de outras do 2° nível de acesso.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/empresa/vaga.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Vaga</h1>
+                        <span>Rota: </span><span class="link">/vagas/{id_vaga}</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/prova.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Prova</h1>
+                        <span>Rota: </span><span class="link">/provas/{id_prova}</span>
+                    </div>
+                </a>
+                <a href="./pages/empresa/candidatura.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Candidatura</h1>
+                        <span>Rota: </span><span class="link">/candidaturas/{id_candidatura}</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="nivel-acesso">
+            <div class="nivel-acesso__descricao">
+                <h1>4° Nível de Acesso</h1>
+                <h3>Nível de acesso mais alto, essas telas só podem ser acessadas dependendo de certas regras de negócio.</h3>
+            </div>
+
+            <div class="nivel-acesso__paginas">
+                <a href="./pages/empresa/empresa.html">
+                    <div class="nivel-acesso__pagina">
+                        <h1>Empresa</h1>
+                        <span>Rota: </span><span class="link">/empresa/{id_empresa}</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

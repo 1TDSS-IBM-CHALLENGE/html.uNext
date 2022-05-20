@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;500&display=swap');
+
+:root {
+    /*Fontes*/
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --icon: "uxwing-iconsfont";
+    
+    /*Paleta uNext*/
+    --cor1: #0067f4;
+    --cor2: #61a3ff;
+    --cor3: #88b9ff;
+    --cor4: #777;
+    --cor5: #f5f5f5;
+
+    /*Cores Auxiliares*/
+    --cinza1: #eee;
+    --cinza2: #ddd;
+    --cinza3: #ccc;
+    --cinza4: #999;
+
+    /*Rolagem suave*/
+    scroll-behavior: smooth;
+}
+
+.sitemap{
+    position: fixed;
+    font-weight: 700;
+    bottom: 25px;
+    left: 25px;
+    z-index: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    max-width: 45px;
+    max-height: 45px; 
+    overflow: hidden;
+    display: flex;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    animation: color 1s ease infinite;
+}
+
+.sitemap::before{
+    content:"\eaa4";
+    font-family: var(--icon);
+    margin-right: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sitemap:hover{
+    max-width: 500px;
+}
+
+@keyframes color {
+    0% {
+        background-color: #F2E41B;
+    }
+
+    50% {
+        background-color: #fff898;
+    }
+
+    100% {
+        background-color: #F2E41B;
+    }
+}

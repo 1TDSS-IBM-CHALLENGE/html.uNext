@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100;300;500&display=swap');
+
+:root{
+    --color1: #0067f4;
+    --color2: #88b9ff;
+    --color3: #F2E41B;
+    --color4: #8C8C8C;
+    --color5: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--cor1);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);
+    border-radius: 50px;
+}
+
+/*NavBar*/
+header{
+    position: sticky;
+    top: 0px;
+}
+
+header nav{
+    background-color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    color: var(--color2);
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+}
+
+/*Fluxograma*/
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+main > h1{
+    color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+main > h1::before, main > h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2em;
+    height: 0.05em;
+    background-color: var(--color1);
+    left: -2.25em;
+}
+
+main > h1::after {
+    left: initial;
+    right: -2.25em;
+}
+
+.nivel-acesso{
+    padding: 50px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nivel-acesso__paginas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nivel-acesso__pagina{
+    color: var(--color5);
+    background-color: var(--color2);
+    min-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.nivel-acesso__pagina:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.nivel-acesso__pagina:hover .link{ 
+    color: var(--color3);
+}
+
+.nivel-acesso__pagina .link{
+    text-decoration: none;
+    color: var(--color5);
+    transition: all .5s ease;
+}
+
+.nivel-acesso__pagina .link:hover{
+    text-decoration: underline;
+}
+
+.nivel-acesso__descricao{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8C8C8C;
+}
+
+.nivel-acesso__descricao h3{
+    font-weight: 500;
+}
