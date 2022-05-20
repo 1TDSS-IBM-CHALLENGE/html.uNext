@@ -41,7 +41,7 @@ main{
     border-radius: 10px;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.30);
     padding: 50px;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .form  a{
