@@ -70,7 +70,7 @@ main{
     width: 100%;
 }
 
-.form__group>span {
+.form__group>label {
     font-weight: 400;
     font-size: 14px;
     font-family: var(--poppins);
