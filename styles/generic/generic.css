@@ -31,6 +31,7 @@
     font-family: var(--roboto);
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -63,9 +64,8 @@ body::-webkit-scrollbar-thumb {
 .sitemap{
     position: fixed;
     font-weight: 700;
-    bottom: 25px;
     left: 25px;
-    z-index: 1;
+    z-index: 9999999;
     font-size: 16px;
     text-transform: uppercase;
     border: none;
@@ -80,6 +80,14 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.5s ease;
     white-space: nowrap;
     animation: color 1s ease infinite;
+}
+
+.baixo{
+    bottom: 25px;
+}
+
+.cima{
+    top: 25px;
 }
 
 .sitemap::before{

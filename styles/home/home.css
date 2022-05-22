@@ -416,6 +416,7 @@ iframe {
     font-family: var(--poppins);
     font-weight: 400;
     letter-spacing: -2px;
+    font-size: 30px;
 }
 
 .form__title::before {
