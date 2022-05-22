@@ -58,6 +58,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 } 
 
 .vagas__vaga:hover{

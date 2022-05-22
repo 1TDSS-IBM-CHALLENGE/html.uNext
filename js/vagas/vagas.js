@@ -42,3 +42,9 @@ document.querySelectorAll('.compatibilidade__match').forEach(element => {
         brilho.style.backgroundColor = 'var(--progresso1)'
     }
 })
+
+document.querySelectorAll('.vagas__vaga').forEach(element => {
+    element.addEventListener('click', () => {
+        window.location = './vaga.html'
+    })
+})
