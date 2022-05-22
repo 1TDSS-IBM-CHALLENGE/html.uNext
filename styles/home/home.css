@@ -31,7 +31,7 @@ nav {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 30px;
     transition: all 0.5s;
@@ -416,6 +416,7 @@ iframe {
     font-family: var(--poppins);
     font-weight: 400;
     letter-spacing: -2px;
+    font-size: 30px;
 }
 
 .form__title::before {
@@ -562,7 +563,7 @@ button.form__control:hover {
     background-color: var(--cor1);
 }
 
-.form__group>span {
+.form__group>label {
     font-weight: 400;
     font-size: 14px;
     font-family: var(--poppins);

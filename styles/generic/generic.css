@@ -31,6 +31,7 @@
     font-family: var(--roboto);
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -63,17 +64,17 @@ body::-webkit-scrollbar-thumb {
 .sitemap{
     position: fixed;
     font-weight: 700;
-    bottom: 25px;
     left: 25px;
-    z-index: 1;
+    z-index: 9999999;
     font-size: 16px;
     text-transform: uppercase;
     border: none;
-    padding: 15px;
+    padding: 20px 22px;
     border-radius: 50px;
     cursor: pointer;
-    max-width: 45px;
-    max-height: 45px; 
+    width: 60px;
+    height: 60px; 
+    max-width: 60px;
     overflow: hidden;
     display: flex;
     transition: all 0.5s ease;
@@ -81,15 +82,24 @@ body::-webkit-scrollbar-thumb {
     animation: color 1s ease infinite;
 }
 
+.baixo{
+    bottom: 25px;
+}
+
+.cima{
+    top: 25px;
+}
+
 .sitemap::before{
     content:"\eaa4";
     font-family: var(--icon);
-    margin-right: 15px;
+    margin-right: 23px;
     font-weight: 700;
     text-align: center;
 }
 
 .sitemap:hover{
+    width: auto;
     max-width: 500px;
 }
 

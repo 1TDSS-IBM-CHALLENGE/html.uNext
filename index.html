@@ -25,7 +25,7 @@
 
 <body>
     <!-- BOTÃO SITEMAP -->
-    <a href="./SiteMap/index.html" class="sitemap">Site map</a>
+    <a href="./SiteMap/index.html" class="sitemap baixo">Site map</a>
     <!-- FIM BOTÃO SITEMAP -->
 
     <!--HEADER-->
@@ -303,21 +303,20 @@
 
                 <div class="form__inputs">
                     <div class="form__group col-6 nome">
-                        <span>Nome</span>
-                        <input type="text" name="nome" required class="form__control nome" placeholder="Nome"
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required class="form__control nome" placeholder="Nome"
                             autocomplete="off" />
                     </div>
 
                     <div class="form__group col-6 email">
-                        <span>Email</span>
-                        <input type="email" name="email" required class="form__control" placeholder="Email"
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required class="form__control" placeholder="Email"
                             autocomplete="off" />
                     </div>
 
                     <div class="form__group col-12 mensagem">
-                        <span>Mensagem</span>
-                        <textarea type="area" name="mensagem" required class="form__control" placeholder="Mensagem"
-                            autocomplete="off"></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea type="area" name="mensagem" id="mensagem" required class="form__control" placeholder="Mensagem"            autocomplete="off"></textarea>
                     </div>
 
                     <div class="form__group col-12 alert sucesso">Mensagem enviada com sucesso. Aguarde sua resposta em

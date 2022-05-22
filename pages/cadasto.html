@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0067f4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0067f4">
+    <meta name="msapplication-navbutton-color" content="#0067f4">
+
+    <title>uNext | Cadastro</title>
+    <link rel="icon" type="imagem/png" href="../content/icons/icon.ico" />
+    <link rel="stylesheet" href="../content/icons/css/uxwing-iconsfont.min.css">
+    <link rel="stylesheet" href="../styles/generic/generic.css">
+    <link rel="stylesheet" href="../styles/login/login.css">
+
+    <script src="https://unpkg.com/imask@6.4.2/dist/imask.js" defer></script>
+    <script src="../js/cadastro/validacao.js" defer></script>
+</head>
+
+<body>
+    <!-- BOTÃO SITEMAP -->
+    <a href="../SiteMap/index.html" class="sitemap baixo">Site map</a>
+    <!-- FIM BOTÃO SITEMAP -->
+
+    <main>
+        <form action="#" class="form">
+            <div class="title">
+                <a href="./login.html">
+                    <span>Voltar</span>
+                </a>
+                <h1>Cadastrar</h1>
+            </div>
+
+            <!-- TIPO CADASTRO -->
+            <div class="form__group col-12">
+                <label>Tipo de Cadastro</label>
+
+                <div class="radio__group">
+                    <div>
+                        <input type="radio" name="tipoCadastro" value="candidato" id="candidato" required checked>
+                        <label for="candidato">Candidato</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="tipoCadastro" value="recrutador" id="recrutador">
+                        <label for="recrutador">Recrutador</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="tipoCadastro" value="empresa" id="empresa">
+                        <label for="empresa">Empresa</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFORMAÇÕES DE PESSOA -->
+            <div class="type type--ativo pessoa">
+                <div class="form__group col-12 nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form__control" placeholder="Nome Completo" required name="nome" id="nome">
+                </div>
+
+                <div class="form__group col-12 documento">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form__control" placeholder="CPF" required name="cpf" id="cpf">
+                </div>
+
+                <div class="form__group col-12 documento">
+                    <label for="cpf">RG</label>
+                    <input type="text" class="form__control" placeholder="RG" required name="rg" id="rg">
+                </div>
+
+                <div class="form__group col-6">
+                    <label>Sexo</label>
+
+                    <div class="radio__group">
+                        <div>
+                            <input type="radio" name="sexo" value="masculino" id="masculino" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="sexo" value="feminino" id="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__group col-12 data">
+                    <label for="cpf">Data de Nascimento</label>
+                    <input type="date" class="form__control" required name="dtNascimento" id="dtNascimento"
+                        placeholder="dd/mm/aaaa">
+                </div>
+            </div>
+
+            <!-- INFORMAÇÕES DE EMPRESA -->
+            <div class="type empresa">
+                <div class="form__group col-12 empresa">
+                    <label for="nmEmpresa">Nome Empresa</label>
+                    <input type="text" class="form__control" placeholder="Nome Empresa" required name="nmEmpresa"
+                        id="nmEmpresa">
+                </div>
+
+                <div class="form__group col-12 empresa">
+                    <label for="razaoSocial">Razão Social</label>
+                    <input type="text" class="form__control" placeholder="Razão Social" required name="razaoSocial"
+                        id="razaoSocial">
+                </div>
+
+                <div class="form__group col-12 documento">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" class="form__control" placeholder="CNPJ" required name="cnpj" id="cnpj">
+                </div>
+
+                <div class="form__group col-6 endereco">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form__control" placeholder="00000-000" required name="cep" id="cep">
+                </div>
+
+                <div class="form__group col-6 endereco">
+                    <label for="uf">UF</label>
+                    <input type="text" class="form__control" placeholder="UF" required name="uf" id="uf" readonly>
+                </div>
+
+                <div class="form__group col-12 endereco">
+                    <label for="rua">Rua</label>
+                    <input type="text" class="form__control" placeholder="Rua" required name="logradouro" id="rua"
+                        readonly>
+                </div>
+
+                <div class="form__group col-12 endereco">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form__control" placeholder="Bairro" required name="bairro" id="bairro"
+                        readonly>
+                </div>
+
+                <div class="form__group col-12 endereco">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form__control" placeholder="Cidade" required name="cidade" id="cidade"
+                        readonly>
+                </div>
+
+                <div class="form__group col-12 endereco">
+                    <label for="referencia">Ponto de Referência</label>
+                    <input type="text" class="form__control" placeholder="Ponto de Referência" name="referencia"
+                        id="referencia">
+                </div>
+
+                <div class="form__group col-6 endereco">
+                    <label for="numero">Número</label>
+                    <input type="text" class="form__control" placeholder="Número" required name="numero" id="numero">
+                </div>
+            </div>
+
+            <!-- INFORMAÇÕES DE LOGIN -->
+            <div class="form__group col-12 email">
+                <label for="email">Email</label>
+                <input type="email" class="form__control" placeholder="Email" required name="email" id="email">
+            </div>
+
+            <div class="form__group col-12 senha">
+                <label for="senha">Senha</label>
+                <input type="password" class="form__control" placeholder="Senha" required name="senha" id="senha">
+            </div>
+
+            <!-- MENSAGEM DE ERRO -->
+            <div class="form__group col-12 alert erro">Email já cadastrado.</div>
+
+            <!-- BOTÃO CADASTRAR -->
+            <div class="center">
+                <button type="submit" class="form__control">Cadastrar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
