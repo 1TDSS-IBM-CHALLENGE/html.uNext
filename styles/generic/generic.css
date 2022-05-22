@@ -69,11 +69,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 16px;
     text-transform: uppercase;
     border: none;
-    padding: 15px;
+    padding: 20px 22px;
     border-radius: 50px;
     cursor: pointer;
-    max-width: 45px;
-    max-height: 45px; 
+    width: 60px;
+    height: 60px; 
+    max-width: 60px;
     overflow: hidden;
     display: flex;
     transition: all 0.5s ease;
@@ -84,12 +85,13 @@ body::-webkit-scrollbar-thumb {
 .sitemap::before{
     content:"\eaa4";
     font-family: var(--icon);
-    margin-right: 15px;
+    margin-right: 23px;
     font-weight: 700;
     text-align: center;
 }
 
 .sitemap:hover{
+    width: auto;
     max-width: 500px;
 }
 
