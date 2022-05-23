@@ -34,6 +34,7 @@ main{
     color: var(--cinza5);
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 30px;
 }
 
 .title > a > span{
